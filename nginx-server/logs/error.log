@@ -1,0 +1,7 @@
+2025/03/15 09:13:06 [error] 29#29: *1 open() "/usr/share/nginx/html/asrefa" failed (2: No such file or directory), client: 172.18.0.1, server: localhost, request: "GET /asrefa HTTP/1.1", host: "localhost:8080"
+2025/03/15 09:13:11 [error] 29#29: *4 open() "/usr/share/nginx/html/asrefa" failed (2: No such file or directory), client: 172.18.0.1, server: localhost, request: "GET /asrefa HTTP/1.1", host: "localhost:8080"
+2025/03/15 09:13:28 [error] 29#29: *7 open() "/usr/share/nginx/html/asfefasfewaf" failed (2: No such file or directory), client: 172.18.0.1, server: localhost, request: "GET /asfefasfewaf HTTP/1.1", host: "localhost:8080"
+2025/03/15 09:15:31 [error] 29#29: *9 open() "/usr/share/nginx/html/asfefasfewaf" failed (2: No such file or directory), client: 172.18.0.1, server: localhost, request: "GET /asfefasfewaf HTTP/1.1", host: "localhost:8080"
+2025/03/15 09:15:36 [error] 29#29: *9 open() "/usr/share/nginx/html/asfefas" failed (2: No such file or directory), client: 172.18.0.1, server: localhost, request: "GET /asfefas HTTP/1.1", host: "localhost:8080"
+2025/03/15 09:15:47 [error] 29#29: *11 open() "/usr/share/nginx/html/wr" failed (2: No such file or directory), client: 172.18.0.1, server: localhost, request: "GET /wr HTTP/1.1", host: "localhost:8080"
+2025/03/15 09:19:41 [error] 29#29: *13 open() "/usr/share/nginx/html/wr" failed (2: No such file or directory), client: 172.18.0.1, server: localhost, request: "GET /wr HTTP/1.1", host: "localhost:8080"

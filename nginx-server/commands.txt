@@ -1,0 +1,1 @@
+docker inspect <container_name_or_id>  Line 263-264 shows the ip withing the subnet

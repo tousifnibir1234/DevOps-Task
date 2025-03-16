@@ -1,0 +1,275 @@
+[
+    {
+        "Id": "ed5a36768aedd1232c2b4903280c88d7798f8979b8103c05822537fcba1b4b69",
+        "Created": "2025-03-15T10:10:32.334715152Z",
+        "Path": "/docker-entrypoint.sh",
+        "Args": [
+            "nginx",
+            "-g",
+            "daemon off;"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 82982,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2025-03-15T10:10:34.261138615Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:b52e0b094bc0e26c9eddc9e4ab7a64ce0033c3360d8b7ad4ff4132c4e03e8f7b",
+        "ResolvConfPath": "/var/lib/docker/containers/ed5a36768aedd1232c2b4903280c88d7798f8979b8103c05822537fcba1b4b69/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/ed5a36768aedd1232c2b4903280c88d7798f8979b8103c05822537fcba1b4b69/hostname",
+        "HostsPath": "/var/lib/docker/containers/ed5a36768aedd1232c2b4903280c88d7798f8979b8103c05822537fcba1b4b69/hosts",
+        "LogPath": "/var/lib/docker/containers/ed5a36768aedd1232c2b4903280c88d7798f8979b8103c05822537fcba1b4b69/ed5a36768aedd1232c2b4903280c88d7798f8979b8103c05822537fcba1b4b69-json.log",
+        "Name": "/nginx-server",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/mnt/c/Users/u1133418/OneDrive - IQVIA/Documents/1-Home/1/DevOps-task/nginx-test/html:/usr/share/nginx/html:rw",
+                "/mnt/c/Users/u1133418/OneDrive - IQVIA/Documents/1-Home/1/DevOps-task/nginx-test/logs:/var/log/nginx:rw",
+                "/mnt/c/Users/u1133418/OneDrive - IQVIA/Documents/1-Home/1/DevOps-task/nginx-test/nginx.conf:/etc/nginx/nginx.conf:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "nginx-test_custom_network",
+            "PortBindings": {
+                "80/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8080"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "always",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": [],
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/8d72b3c79debebc4f1c56fb17808990ebabf574d35a13a5916348c31688e3f71-init/diff:/var/lib/docker/overlay2/5fe953c828d8c8e69404d999d68132481dae6caf69000aaec56645dbb6b6f982/diff:/var/lib/docker/overlay2/647276e2496d5cdff4763a536d0838cf798d5513a700e1da8f33fecec768eca7/diff:/var/lib/docker/overlay2/189c3a75e13ac5ba013bbefcb135cac69d0cb70305931541a77e26369cc3877e/diff:/var/lib/docker/overlay2/83d809e806233f4db40f3d6ef709e3ce06562a7088c7c9612c5b25b8781ba037/diff:/var/lib/docker/overlay2/8a6a368f681caa252ae00e63456ffc41ac0641a28da6fc8e0c838ebb5b672e64/diff:/var/lib/docker/overlay2/fee7e9e683068595dba74c61895e873f2f88a07704e9169b50c8750278c41495/diff:/var/lib/docker/overlay2/12eb4962186fe2acbb639d8bbf1e27afd196bf1d9b65a847f73cfb7bb553c078/diff",
+                "MergedDir": "/var/lib/docker/overlay2/8d72b3c79debebc4f1c56fb17808990ebabf574d35a13a5916348c31688e3f71/merged",
+                "UpperDir": "/var/lib/docker/overlay2/8d72b3c79debebc4f1c56fb17808990ebabf574d35a13a5916348c31688e3f71/diff",
+                "WorkDir": "/var/lib/docker/overlay2/8d72b3c79debebc4f1c56fb17808990ebabf574d35a13a5916348c31688e3f71/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/mnt/c/Users/u1133418/OneDrive - IQVIA/Documents/1-Home/1/DevOps-task/nginx-test/nginx.conf",
+                "Destination": "/etc/nginx/nginx.conf",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/mnt/c/Users/u1133418/OneDrive - IQVIA/Documents/1-Home/1/DevOps-task/nginx-test/html",
+                "Destination": "/usr/share/nginx/html",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/mnt/c/Users/u1133418/OneDrive - IQVIA/Documents/1-Home/1/DevOps-task/nginx-test/logs",
+                "Destination": "/var/log/nginx",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "ed5a36768aed",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.27.4",
+                "NJS_VERSION=0.8.9",
+                "NJS_RELEASE=1~bookworm",
+                "PKG_RELEASE=1~bookworm",
+                "DYNPKG_RELEASE=1~bookworm"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "Image": "nginx:latest",
+            "Volumes": {
+                "/etc/nginx/nginx.conf": {},
+                "/usr/share/nginx/html": {},
+                "/var/log/nginx": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "fc504d4d18432776cc2600f07fb09f25bf99c123616a1926c4d6d71cd0b163ac",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "nginx-test",
+                "com.docker.compose.project.config_files": "compose.yaml",
+                "com.docker.compose.project.working_dir": "/mnt/c/Users/u1133418/OneDrive - IQVIA/Documents/1-Home/1/DevOps-task/nginx-test",
+                "com.docker.compose.service": "nginx",
+                "com.docker.compose.version": "1.29.2",
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "6fd761a8c15463bdaf79a2ab1fd81b3bfe95c16f23cb5f0db874558e5556c122",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "80/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8080"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "8080"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/6fd761a8c154",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "nginx-test_custom_network": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "nginx",
+                        "ed5a36768aed"
+                    ],
+                    "NetworkID": "76a1017e90fa9ca47089ab865ca7867e82b4eaa489db8389b37de8f54a8e7178",
+                    "EndpointID": "dcdc53bdca6ddbc21a60e6871138c429cbb6ee1b5cd88af78c2c93632928ae92",
+                    "Gateway": "172.20.8.1",
+                    "IPAddress": "172.20.8.2",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:14:08:02",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]

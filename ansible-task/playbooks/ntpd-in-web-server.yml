@@ -1,0 +1,40 @@
+---
+- name: Configure cron job for logrotate
+  hosts: ec2
+  become: yes
+  tasks:
+    - name: Run logrotate every 10 minutes between 2 AM and 4 AM
+      cron:
+        name: "Run logrotate every 10 minutes between 2 AM and 4 AM"
+        minute: "*/10"
+        hour: "2-3"
+        job: "/usr/sbin/logrotate /etc/logrotate.conf"
+- name: Deploy ntpd package on EC2 instance
+  hosts: ec2
+  become: yes
+  tasks:
+    - name: Ensure ntpd is installed
+      apt:
+        name: ntp
+        state: present
+    - name: Configure ntp
+      copy:
+        dest: /etc/ntp.conf
+        content: |
+          tinker panic 0
+          restrict default kod nomodify notrap nopeer noquery
+          restrict -6 default kod nomodify notrap nopeer noquery
+          restrict 127.0.0.1
+          restrict -6::1
+          server 192.168.0.252 minpoll 4 maxpoll 8
+          server 192.168.0.251 minpoll 4 maxpoll 8
+          server 192.168.0.0
+          fudge 192.168.0.0 stratrum 10
+          driftfile /var/lib/ntp/drift
+          keys /etc/ntp/keys
+
+    - name: Ensure ntpd is started and enabled
+      service:
+        name: ntpd
+        state: restarted
+        enabled: yes

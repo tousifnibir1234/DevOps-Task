@@ -1,0 +1,19 @@
+- name: Deploy monitoring templates on Nagios server
+  hosts: nagios
+  become: yes
+  tasks:
+    - name: Create Nagios host configuration for EC2 instances
+      template:
+        src: /home/ec2-user/nibir/ansible-poc/templates/nagios_host_template.cfg.j2
+        dest: /usr/local/nagios/etc/hosts/{{ item }}.cfg
+        owner: nagios
+        group: nagios
+        mode: '0644'
+      with_items: "{{ groups['ec2'] }}"
+      loop_control:
+        loop_var: item
+
+    - name: Restart Nagios service
+      service:
+        name: nagios
+        state: restarted
